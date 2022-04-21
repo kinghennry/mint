@@ -17,9 +17,9 @@ function App() {
     <Router>
       <Navbar />
       <Hero />
-      {/* <About /> */}
+      <About />
       <Team />
-      {/* <Story /> */}
+      <Story />
       {/* <Testemonial /> */}
       <Faqs />
       <Footer />

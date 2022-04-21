@@ -36,15 +36,15 @@ article p {
 .story {
   background-image: url("../../images/Vector.jpg");
   /* background: #fdfbf2; */
-  height: 250vh;
+  /* height: 250vh; */
   display: flex;
   flex-direction: column;
-  background-repeat: no-repeat;
-  background-size: 70%;
+  /* background-repeat: no-repeat; */
+  /* background-size: 70%; */
   /* background-size: cover; */
-  background-position: center 100%;
-  align-items: center;
-  justify-content: center;
+  /* background-position: center 100%; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 @media (max-width: 768px) {

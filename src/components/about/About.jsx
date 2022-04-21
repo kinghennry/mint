@@ -38,7 +38,17 @@ const About = () => {
             </div>
           </div>
           <div className="about__text">
-            <Breadcrumb title="About Us" desc="Welcome to the CLIMATE APE" />
+            <h4 className="title text-bg">About Us</h4>
+            <h1
+              className="desc"
+              style={{ margin: "20px 0 10px", lineHeight: "30px" }}
+            >
+              WELCOME TO THE
+              <br />
+              <span style={{ margin: "16px 0 0px", display: "block" }}>
+                CLIMATE APE
+              </span>
+            </h1>
 
             <p>
               The Climate Ape (CAPE) is dedicated to creating awareness about
