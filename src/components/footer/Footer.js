@@ -1,8 +1,5 @@
 import React from "react";
 import "./footer.css";
-import fb from "../../images/Icon Button.svg";
-import yb from "../../images/Icon Button2.svg";
-import tw from "../../images/Icon Button3.svg";
 import partner1 from "../../images/image 18.svg";
 import partner2 from "../../images/image 19.svg";
 import { Link } from "react-router-dom";
@@ -15,13 +12,13 @@ function Footer() {
           <h2 className="footer__text">Climate Ape</h2>
           <div className="footer__socials">
             <Link>
-              <img src={fb} alt="fb" />
+              <img src="/Assets/fb.svg" alt="fb" />
             </Link>
             <Link>
-              <img src={yb} alt="yb" />
+              <img src="/Assets/linkedin.svg" alt="linked" />
             </Link>
             <Link>
-              <img src={tw} alt="tw" />
+              <img src="/Assets/web.svg" alt="web" />
             </Link>
           </div>
         </div>
@@ -37,7 +34,7 @@ function Footer() {
         <div className="footer_cr">
           <button className="footer__btn">Join Our Discord</button>
           <div className="copyright__link">
-            Copyright 2021. All Rights Reserved.
+            Copyright 2022. All Rights Reserved.
           </div>
         </div>
       </div>

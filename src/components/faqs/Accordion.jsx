@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsPlusCircle } from "react-icons/bs";
-import sub from "../../images/Line 16.svg";
+import { AiOutlineMinus } from "react-icons/ai";
 
 function Accordion({ title, answer }) {
   const [showInfo, setShowInfo] = useState(false);
@@ -12,16 +12,9 @@ function Accordion({ title, answer }) {
         <span className="question__text">{title}</span>
 
         {showInfo ? (
-          //   <FiChevronUp
-          //     className={`icon ${showInfo ? "icon--active" : ""}`}
-          //     onClick={() => {
-          //       setShowInfo(!showInfo);
-          //     }}
-          //   />
           <>
-            <img
-              src={sub}
-              alt="sub"
+            <AiOutlineMinus
+              className="acc__white"
               onClick={() => {
                 setShowInfo(!showInfo);
               }}

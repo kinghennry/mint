@@ -3,8 +3,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #fdf7f2;
-  border-bottom: 1px solid lightgrey;
+  background: #070417;
+  border-bottom: 1px solid #a8a8a8;
 }
 
 .nav__toggle {
@@ -18,8 +18,8 @@ header {
   width: 1rem;
   transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   height: 2px;
-  color: rgb(20, 12, 12);
-  background-color: rgb(20, 12, 12);
+  color: white;
+  background-color: white;
   transform-origin: 1.1px 2px;
 }
 
@@ -34,7 +34,7 @@ header {
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: black;
+  color: #ffffff;
   font-weight: bold;
   font-family: var(--font-family-inter);
 }
@@ -43,6 +43,7 @@ header {
 }
 .nav__logo h3 {
   font-family: var(--font-family-main-font);
+  color: #ffffff;
 }
 @media (max-width: 1024px) {
   .nav__toggle {

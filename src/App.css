@@ -33,6 +33,7 @@ body {
   /* --SoftRed: hsl(0, 94%, 66%); */
   /* get the variable colors */
   overflow-x: hidden;
+  background: #070417;
 }
 input,
 button {
@@ -44,6 +45,7 @@ button {
 
 img {
   max-width: 100%;
+  display: block;
 }
 .container {
   margin: 0 auto;
@@ -89,7 +91,9 @@ a {
 .nav {
   padding: 17px 24px;
 }
-
+.mt {
+  margin-top: 70px;
+}
 .px {
   padding: 0 2rem;
 }

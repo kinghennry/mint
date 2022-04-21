@@ -8,6 +8,7 @@ import {
   About,
   Testemonial,
   Team,
+  Story,
 } from "./components";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -15,9 +16,10 @@ function App() {
   return (
     <Router>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       {/* <About /> */}
       <Team />
+      {/* <Story /> */}
       {/* <Testemonial /> */}
       <Faqs />
       <Footer />

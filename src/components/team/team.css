@@ -1,6 +1,5 @@
 .grid {
-  /* margin-top: 7rem; */
-  /* padding: 0 1.2rem; */
+  margin: 2rem 0;
 }
 
 .grid__box {
@@ -13,15 +12,18 @@
   gap: 20px;
 }
 .grid__box article {
-  border: 1px solid lightgray;
+  border: 1px solid #201d2e;
+  background: #201d2e;
 }
 article h4,
 p {
   font-family: var(--font-family-inter);
+  color: #ffffff;
 }
 article h4 {
   font-family: var(--font-family-inter);
   margin: 10px 0 15px;
+  color: #ffffff;
 }
 article p {
   margin-bottom: 10px;
@@ -29,6 +31,20 @@ article p {
 .team__img {
   margin: 20px 20px;
   background: rgba(255, 255, 255, 0.1);
+}
+
+.story {
+  background-image: url("../../images/Vector.jpg");
+  /* background: #fdfbf2; */
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  /* background-size: cover; */
+  background-position: center 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {

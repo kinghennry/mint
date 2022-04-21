@@ -1,5 +1,6 @@
 footer {
-  background-color: #070417;
+  background: #201d2e;
+  backdrop-filter: blur(50px);
   padding: 1rem 0;
   text-align: center;
 }
@@ -64,8 +65,12 @@ footer {
 .footer__btn {
   margin-bottom: 2rem;
   color: white;
-  background: var(--green);
-  border: 1px solid var(--green);
+  background: radial-gradient(
+    100% 100% at 142.5% 13.75%,
+    #ffffff 0%,
+    #7012ce 100%
+  );
+  border: none;
   padding: 10px 20px;
   font-family: var(--font-family-inter);
 }
