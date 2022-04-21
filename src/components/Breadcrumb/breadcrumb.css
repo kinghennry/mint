@@ -1,0 +1,16 @@
+.title {
+  font-family: var(--font-family-main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: capitalize;
+  color: var(--green);
+}
+.desc {
+  font-family: var(--font-family-main-font);
+  font-style: normal;
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+  color: var(--dark-red);
+}

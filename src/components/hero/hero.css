@@ -1,0 +1,27 @@
+.hero__flex {
+  display: flex;
+  align-items: center;
+}
+.hero__text {
+  order: 1;
+  /* margin-top: unset; */
+  text-align: left;
+  flex: 2;
+}
+.hero__imgDiv {
+  order: 2;
+  flex: 3;
+  display: flex;
+}
+.hero__img {
+  /* width: 120px; */
+}
+.purple {
+  transform: translateZ(-45deg);
+}
+
+@media (max-width: 534px) {
+  .hero__flex {
+    flex-direction: column;
+  }
+}
