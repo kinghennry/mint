@@ -5,4 +5,6 @@ export { default as Hero } from "./hero/Hero";
 export { default as About } from "./about/About";
 export { default as Team } from "./team/Team";
 export { default as Story } from "./team/Story";
-export { default as Testemonial } from "./user/Testemonial";
+export { default as Roadmaps } from "./user/Roadmaps";
+export { default as LimitedSale } from "./LimitedSale/LimitedSale";
+export { default as Slider } from "./Slider/Slider";

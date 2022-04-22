@@ -9,7 +9,7 @@ function Faqs() {
   return (
     <section className="faqs">
       <div className="container px py ">
-        <Breadcrumb title="FAQs" ct />
+        <Breadcrumb title="FAQs" ct desc="Frequenly Asked Questions" />
         <div className="accordion">
           {questions.map((question) => {
             return <Accordion key={question.id} {...question} />;

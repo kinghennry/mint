@@ -3,10 +3,8 @@
 }
 .about_flex {
   display: flex;
-  /* align-items: center; */
-  /* flex-direction: column; */
+ 
 }
-
 .about__img {
   flex: 2;
   order: 1;
@@ -26,7 +24,6 @@
 }
 .about__image {
   position: relative;
-  /* margin: 10px; */
   width: 170px;
 }
 .about__text p {
@@ -56,7 +53,7 @@
 
 @media (max-width: 768px) {
   .about_flex {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .about__img {
     text-align: center;

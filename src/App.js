@@ -6,9 +6,11 @@ import {
   Navbar,
   Hero,
   About,
-  Testemonial,
+  Roadmaps,
   Team,
+  LimitedSale,
   Story,
+  Slider,
 } from "./components";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -18,9 +20,11 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Team />
       <Story />
-      {/* <Testemonial /> */}
+      <LimitedSale />
+      <Slider />
+      <Roadmaps />
+      <Team />
       <Faqs />
       <Footer />
     </Router>
