@@ -19,7 +19,6 @@ export const teams = [
     bg: "#C798FE",
     name: "Sammy",
     duty: "The Astronaut",
-    height: "282px",
   },
   {
     id: 4,

@@ -14,7 +14,7 @@ const Team = () => {
             return (
               <article key={id} className="ct">
                 <div className="team__img" style={{ background: `${bg}` }}>
-                  <img style={{ height: `${height}` }} src={image} alt={name} />
+                  <img src={image} alt={name} />
                 </div>
                 <h4>{name}</h4>
                 <p>{duty}</p>

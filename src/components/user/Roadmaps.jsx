@@ -7,11 +7,11 @@ const Roadmaps = () => {
       <div className="container">
         <div className="roadmap">
           <h4 className="title text-bg">Climate Ape</h4>
-          <h1 className="desc" style={{ margin: "12px 0 0" }}>
+          <h1 className="desc" style={{ margin: "12px 0 19px" }}>
             ROADMAP
           </h1>
           <div className="roadmap-flex flex ai" id="first-border">
-            <div className="roadmap-text">
+            <div className="roadmap-text roadmap-px">
               <h3 className="desc">10 % Phase 1: The beginning</h3>
               <p className="roadmap-desc">
                 To us, the community comes first. The goal is to make our drop
@@ -75,7 +75,7 @@ const Roadmaps = () => {
             </div>
           </div>
           {/*  */}
-          <div className="roadmap-flex flex ">
+          <div className="roadmap-flex flex row-reverse">
             <div className="roadmap-textone roadmap-px" id="fourth-border">
               <h3 className="desc">100% </h3>
               <h5 className="roadmap-title">The World Must know who we are</h5>
@@ -111,7 +111,7 @@ const Roadmaps = () => {
           </div>
           {/*  */}
           <div className="roadmap-flex flex ai">
-            <div className="roadmap-textone roadmap-px">
+            <div className="roadmap-textone roadmap-px" id="fifth-border">
               <h3 className="desc">110% </h3>
               <h5 className="roadmap-title">
                 The Metaverse is coming, so our NFT collection needs to scale up

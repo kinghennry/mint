@@ -57,7 +57,7 @@ const Slider = () => {
             return (
               <article key={id} className="flex">
                 <div className="team__img" style={{ background: `${bg}` }}>
-                  <img className={`${height}`} src={pic} alt="image" />
+                  <img className={`${height}`} src={pic} alt="pic" />
                 </div>
               </article>
             );

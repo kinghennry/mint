@@ -7,7 +7,25 @@
   position: relative;
 }
 #first-border::before {
-  /* border-left: 1px solid #7012ce; */
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  background: #7012ce;
+  outline: 1px solid #7012ce;
+  outline-offset: 3px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: 1rem;
+  width: 1rem;
+  left: -9px;
+  margin-bottom: 85px;
+}
+
+#second-border {
+  border-top: 1px solid #7012ce;
+  border-right: 1px solid #7012ce;
+  position: relative;
+}
+#second-border::before {
   content: "";
   position: absolute;
   border-radius: 100%;
@@ -15,32 +33,94 @@
   transform: matrix(-1, 0, 0, 1, 0, 0);
   height: 1rem;
   width: 1rem;
-  left: -9px;
-  margin-bottom: 85px;
+  top: -9px;
+  outline: 1px solid #7012ce;
+  outline-offset: 3px;
 }
-#first-border::after {
+#second-border::after {
   content: "";
   position: absolute;
   border-radius: 100%;
-  border: 2px solid #7012ce;
-  height: 2rem;
-  width: 2rem;
-  left: -17px;
-  margin-bottom: 85px;
-}
-#second-border {
-  border-top: 2px solid #7012ce;
-  border-right: 2px solid #7012ce;
+  background: #7012ce;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: 1rem;
+  width: 1rem;
+  right: -9px;
+  outline: 1px solid #7012ce;
+  outline-offset: 3px;
 }
 #third-border {
-  border-top: 2px solid #7012ce;
-  border-right: 2px solid #7012ce;
-  border-bottom: 2px solid #7012ce;
+  border-top: 1px solid #7012ce;
+  border-right: 1px solid #7012ce;
+  border-bottom: 1px solid #7012ce;
+  position: relative;
 }
+
+#third-border::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  background: #7012ce;
+  outline: 1px solid #7012ce;
+  outline-offset: 3px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: 1rem;
+  width: 1rem;
+  top: -9px;
+}
+#third-border::after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  background: #7012ce;
+  outline: 1px solid #7012ce;
+  outline-offset: 3px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: 1rem;
+  width: 1rem;
+  bottom: -9px;
+  left: 20px;
+}
+
 #fourth-border {
-  border-right: 2px solid #7012ce;
-  border-bottom: 2px solid #7012ce;
+  border-right: 1px solid #7012ce;
+  position: relative;
+  align-items: flex-end;
+  text-align: right;
+  padding-top: 70px;
+  border-bottom: 1px solid #7012ce;
 }
+
+#fourth-border::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  background: #7012ce;
+  outline: 1px solid #7012ce;
+  outline-offset: 3px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: 1rem;
+  width: 1rem;
+  right: -9px;
+}
+
+#fifth-border {
+  position: relative;
+}
+
+#fifth-border::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  background: #7012ce;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: 1rem;
+  width: 1rem;
+  top: -9px;
+  outline: 1px solid #7012ce;
+  outline-offset: 3px;
+}
+
 .roadmap-image {
   flex: 0.5;
 }
@@ -75,14 +155,53 @@
   .roadmap-flex {
     flex-direction: column;
     border-left: 1px solid #7012ce;
-    /* padding-left: 20px; */
   }
-  #first-border,
+  #first-border::before {
+    left: -9px;
+    margin-top: 30px;
+  }
+
+  .row-reverse {
+    flex-direction: column-reverse;
+  }
+  #second-border::before {
+    left: -9px;
+    margin-top: 40px;
+  }
+  #fourth-border::before {
+    left: -9px;
+    margin-top: 2.2%;
+  }
+  #third-border::after {
+    bottom: -13%;
+    left: -8px;
+  }
+  #fifth-border::before {
+    left: -9px;
+    top: 12.5%;
+  }
+  #second-border::after {
+    left: -9px;
+    margin-top: 285px;
+  }
+
+  #third-border::before {
+    left: -9px;
+    margin-top: 38px;
+  }
+
   #second-border,
   #third-border,
-  #fourth-border {
+  #fourth-border,
+  #fifth-border {
     border: 0;
   }
+  #fourth-border {
+    padding-top: 0px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
   .roadmap-image {
     display: none;
   }
