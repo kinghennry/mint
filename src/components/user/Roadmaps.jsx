@@ -1,5 +1,6 @@
 import React from "react";
 import "./Roadmap.css";
+import { BsPercent } from "react-icons/bs";
 
 const Roadmaps = () => {
   return (
@@ -12,7 +13,13 @@ const Roadmaps = () => {
           </h1>
           <div className="roadmap-flex flex ai" id="first-border">
             <div className="roadmap-text roadmap-px">
-              <h3 className="desc">10 % Phase 1: The beginning</h3>
+              <h3 className="desc flex ai">
+                10
+                <span style={{ marginTop: "5px" }}>
+                  <BsPercent />
+                </span>{" "}
+                &nbsp; Phase 1: The beginning
+              </h3>
               <p className="roadmap-desc">
                 To us, the community comes first. The goal is to make our drop
                 as successful as possible, to have the freedom to develop
@@ -30,7 +37,12 @@ const Roadmaps = () => {
           {/*  */}
           <div className="roadmap-flex flex ">
             <div className="roadmap-textone roadmap-px" id="second-border">
-              <h3 className="desc">20% </h3>
+              <h3 className="desc flex ai">
+                20
+                <span style={{ marginTop: "5px" }}>
+                  <BsPercent />
+                </span>{" "}
+              </h3>
               <h5 className="roadmap-title">
                 member exclusive merch unlocking!.
               </h5>
@@ -45,7 +57,12 @@ const Roadmaps = () => {
               </p>
             </div>
             <div className="roadmap-text2 roadmap-px">
-              <h3 className="desc">40% </h3>
+              <h3 className="desc flex ai">
+                40
+                <span style={{ marginTop: "5px" }}>
+                  <BsPercent />
+                </span>{" "}
+              </h3>
               <h5 className="roadmap-title">
                 Climate Ape provides a unique piece to your home.
               </h5>
@@ -58,7 +75,12 @@ const Roadmaps = () => {
           <div className="roadmap-flex flex ">
             <div className="roadmap-textone roadmap-px"></div>
             <div className="roadmap-text2 roadmap-px" id="third-border">
-              <h3 className="desc">50% </h3>
+              <h3 className="desc flex ai">
+                50
+                <span style={{ marginTop: "5px" }}>
+                  <BsPercent />
+                </span>{" "}
+              </h3>
               <h5 className="roadmap-title">
                 Funding our first renewable energy project.
               </h5>
@@ -77,7 +99,12 @@ const Roadmaps = () => {
           {/*  */}
           <div className="roadmap-flex flex row-reverse">
             <div className="roadmap-textone roadmap-px" id="fourth-border">
-              <h3 className="desc">100% </h3>
+              <h3 className="desc flex ai">
+                100
+                <span style={{ marginTop: "5px" }}>
+                  <BsPercent />
+                </span>{" "}
+              </h3>
               <h5 className="roadmap-title">The World Must know who we are</h5>
               <p className="roadmap-desc">
                 We want to show you that you made the best choice to be part of
@@ -87,7 +114,12 @@ const Roadmaps = () => {
               </p>
             </div>
             <div className="roadmap-text2 roadmap-px">
-              <h3 className="desc">70% </h3>
+              <h3 className="desc flex ai">
+                70{" "}
+                <span style={{ marginTop: "5px" }}>
+                  <BsPercent />
+                </span>{" "}
+              </h3>
               <h5 className="roadmap-title">We are arranging an event!</h5>
               <p className="roadmap-desc">
                 As we all know, Climate Ape is a growing community. As members,
@@ -112,7 +144,12 @@ const Roadmaps = () => {
           {/*  */}
           <div className="roadmap-flex flex ai">
             <div className="roadmap-textone roadmap-px" id="fifth-border">
-              <h3 className="desc">110% </h3>
+              <h3 className="desc flex ai">
+                110
+                <span style={{ marginTop: "5px" }}>
+                  <BsPercent />
+                </span>{" "}
+              </h3>
               <h5 className="roadmap-title">
                 The Metaverse is coming, so our NFT collection needs to scale up
               </h5>
