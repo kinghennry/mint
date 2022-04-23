@@ -41,7 +41,7 @@
 .answer p {
   line-height: 1.5;
   letter-spacing: 0.3px;
-  font-family: var(--font-family-inter);
+  font-family: var(--font-family-Georama) !important;
   text-align: left;
   font-size: 14px;
   color: #ffffff;

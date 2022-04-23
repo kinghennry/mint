@@ -10,11 +10,11 @@ const Team = () => {
         <Breadcrumb title="Meet The Crew" desc="ALL STARS TEAM" ct />
         <div className="grid__box">
           {teams.map((team) => {
-            const { id, name, duty, bg, image } = team;
+            const { id, name, duty, bg, image, height } = team;
             return (
               <article key={id} className="ct">
                 <div className="team__img" style={{ background: `${bg}` }}>
-                  <img src={image} alt={name} />
+                  <img style={{ height: `${height}` }} src={image} alt={name} />
                 </div>
                 <h4>{name}</h4>
                 <p>{duty}</p>

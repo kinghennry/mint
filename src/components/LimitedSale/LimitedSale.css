@@ -5,12 +5,10 @@
   margin: 80px 0;
 }
 .mint {
-  flex: 3;
-  order: 1;
+  flex: 0.5;
 }
 .sale {
-  flex: 3;
-  order: 2;
+  flex: 0.5;
   margin: 0 60px;
   border: 1px solid #7012ce;
   background: rgba(255, 255, 255, 0.1);
@@ -34,8 +32,7 @@
 .mint-timer,
 .min-style,
 .price-calc,
-.price,
-.min-style {
+.price {
   font-family: var(--font-family-inter) !important;
 }
 
@@ -72,6 +69,7 @@
   font-weight: 500;
   margin-top: 20px;
   display: inline-block;
+  font-family: var(--font-family-Georama) !important;
 }
 
 .total {
