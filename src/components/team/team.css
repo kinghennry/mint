@@ -32,19 +32,45 @@ article p {
   margin: 20px 20px;
   background: rgba(255, 255, 255, 0.1);
 }
-
+/* story css */
+.story-div {
+  /* padding: 0 5px; */
+}
 .story {
-  background-image: url("../../images/Vectorr.jpg");
-  /* background: #fdfbf2; */
-  /* height: 250vh; */
-  display: flex;
-  flex-direction: column;
-  /* background-repeat: no-repeat; */
-  /* background-size: 70%; */
-  /* background-size: cover; */
+  background-image: url("../../images/Vector.jpg");
+  /* min-height: 120vh; */
+  background-repeat: no-repeat;
+  margin: 20px 0;
+  background-size: 100%;
   /* background-position: center 100%; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  position: relative;
+  padding: 40px 30px;
+}
+
+.story h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  /* position: absolute; */
+  color: #a48b77;
+  /* padding: 100px 60px 0; */
+  line-height: 14.5px;
+  padding: 7px 40px 0;
+}
+
+.story-header {
+  font-family: "Inter";
+  /* position: absolute; */
+  font-weight: 700;
+  /* margin-left: 30%; */
+  color: #a48b77;
+  /* margin-top: 30px; */
+}
+
+#fourth-story {
+  padding: 50px 30px;
+  line-height: 24px;
 }
 
 @media (max-width: 768px) {
@@ -55,5 +81,34 @@ article p {
 @media (max-width: 425px) {
   .grid__box {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .story h5 {
+    /* padding: 140px 60px 0; */
+    /* line-height: unset; */
+    /* font-size: 11px; */
+  }
+  .story {
+    background-image: url("../../images/Vector.jpg");
+    /* min-height: 120vh; */
+    background-repeat: no-repeat;
+    margin: 20px 0;
+    background-size: 100%;
+    /* background-position: center 100%; */
+    position: relative;
+    padding: 35px 20px;
+  }
+
+  .story-header {
+    /* margin-top: 100px; */
+  }
+}
+@media (max-width: 325px) {
+  .story h5 {
+    font-size: 11px;
+    line-height: 13px;
+    padding: 10px 20px 0;
   }
 }

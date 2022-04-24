@@ -1,10 +1,9 @@
 import React from "react";
 import "./about.css";
-import Breadcrumb from "../Breadcrumb/Breadcrumb";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id='about'>
       <div className="container">
         <div className="about_flex">
           <div className="about__img">

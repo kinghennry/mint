@@ -150,8 +150,13 @@
   color: #ffffff;
   font-size: 15px;
 }
+.phase-one{
+    font-size: 17px;
+}
 /* media queries */
+
 @media (max-width: 600px) {
+    
   .roadmap-flex {
     flex-direction: column;
     border-left: 1px solid #7012ce;

@@ -2,7 +2,7 @@ import React from "react";
 import "./LimitedSale.css";
 function LimitedSale() {
   return (
-    <section className="limited-sale">
+    <section className="limited-sale" id='mint'>
       <div className="container">
         <div className="limitedSale-flex">
           <div className="mint">

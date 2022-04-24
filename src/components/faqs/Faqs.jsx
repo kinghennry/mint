@@ -7,7 +7,7 @@ import Accordion from "./Accordion";
 function Faqs() {
   const [questions, setQuestions] = React.useState(data);
   return (
-    <section className="faqs">
+    <section className="faqs" id='faq'>
       <div className="container px py ">
         <Breadcrumb title="FAQs" ct desc="Frequenly Asked Questions" />
         <div className="accordion">

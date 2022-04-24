@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { routes } from "./data";
 import "./navbar.css";
-import { Link } from "react-router-dom";
-// this pary and hero section have the same bacground of pink.
+import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
@@ -27,11 +27,16 @@ const Navbar = () => {
             className={`nav__list flex sa ${toggle ? "nav__list--active" : ""}`}
           >
             {routes.map((route) => {
-              const { id, link } = route;
+              const { id, link,path } = route;
               return (
                 <>
                   <li className="nav__item" key={id}>
-                    <Link to="/" className="nav__link">
+                    <Link to={path}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className="nav__link">
                       {link}
                     </Link>
                   </li>

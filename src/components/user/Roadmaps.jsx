@@ -4,7 +4,7 @@ import { BsPercent } from "react-icons/bs";
 
 const Roadmaps = () => {
   return (
-    <section className="limited-sale">
+    <section className="limited-sale" id='roadmap'>
       <div className="container">
         <div className="roadmap">
           <h4 className="title text-bg">Climate Ape</h4>
@@ -13,12 +13,11 @@ const Roadmaps = () => {
           </h1>
           <div className="roadmap-flex flex ai" id="first-border">
             <div className="roadmap-text roadmap-px">
-              <h3 className="desc flex ai">
+              <h3 className="desc flex ai phase-one">
                 10
-                <span style={{ marginTop: "5px" }}>
+                <span style={{ paddingTop: "3px" }} className='flex ai'>
                   <BsPercent />
-                </span>{" "}
-                &nbsp; Phase 1: The beginning
+                </span> &nbsp; Phase 1: The beginning
               </h3>
               <p className="roadmap-desc">
                 To us, the community comes first. The goal is to make our drop

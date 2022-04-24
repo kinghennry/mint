@@ -5,12 +5,12 @@ import { teams } from "./data";
 
 const Team = () => {
   return (
-    <section className="grid">
+    <section className="grid" id='team'>
       <div className="container">
         <Breadcrumb title="Meet The Crew" desc="ALL STARS TEAM" ct />
         <div className="grid__box">
           {teams.map((team) => {
-            const { id, name, duty, bg, image, height } = team;
+            const { id, name, duty, bg, image } = team;
             return (
               <article key={id} className="ct">
                 <div className="team__img" style={{ background: `${bg}` }}>

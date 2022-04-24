@@ -20,7 +20,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      {/* <Story /> */}
+      <Story />
       <LimitedSale />
       <Slider />
       <Roadmaps />
