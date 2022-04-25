@@ -5,23 +5,8 @@
 /* get the font. */
 
 :root {
-  /* --blue: #007bff; */
-  /* --indigo: #6610f2; */
-  /* --purple: #6f42c1; */
-  /* --pink: #e83e8c; */
-  /* --red: #dc3545; */
-  /* --orange: #fd7e14; */
-  /* --yellow: #ffc107; */
   --green: #006837;
   --dark-red: #070417;
-  /* --teal: #20c997; */
-  /* --cyan: #17a2b8; */
-  /* --white: #fff; */
-  /* --gray: #6c757d; */
-  /* --gray-dark: #343a40; */
-  /* --primary: #007bff; */
-  /* --light: #f8f9fa; */
-
   --font-family-main-font: "Michroma", sans-serif;
   --font-family-inter: "Inter", sans-serif;
   --font-family-Georama: "Georama", sans-serif;
@@ -35,18 +20,11 @@ input,
 button {
   font-family: inherit;
   outline-width: 0;
-  /* border-radius: 4px; */
-  /* font-size: 12px; */
 }
 
 img {
   max-width: 100%;
   display: block;
-}
-.container {
-  margin: 0 auto;
-  width: 1300px;
-  max-width: 90%;
 }
 
 ul {
@@ -124,4 +102,10 @@ p {
 .flex-box {
   display: flex;
   align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1300px;
+  max-width: 90%;
 }

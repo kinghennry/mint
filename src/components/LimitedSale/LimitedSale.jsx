@@ -117,22 +117,6 @@ function LimitedSale() {
               </h4>
               <div className="mint-timer flex-box se">
                 <CountDownTimer targetDate={dateTimeAfterFiveDays} />
-                {/* <div style={{ fontSize: "14px", fontWeight: "600" }}>
-                  10
-                  <small style={{ fontWeight: "400" }}>Days</small>
-                </div>
-                <div style={{ fontSize: "14px", fontWeight: "600" }}>
-                  12
-                  <small style={{ fontWeight: "400" }}>Hours</small>
-                </div>
-                <div style={{ fontSize: "14px", fontWeight: "600" }}>
-                  32
-                  <small style={{ fontWeight: "400" }}>Min</small>
-                </div>
-                <div style={{ fontSize: "14px", fontWeight: "600" }}>
-                  18
-                  <small style={{ fontWeight: "400" }}>Sec</small>
-                </div> */}
               </div>
             </div>
             <span className="desc min-style" style={{ fontSize: "13px" }}>

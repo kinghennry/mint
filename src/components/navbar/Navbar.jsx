@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <header>
       <div className="container">
-        <nav className="nav flex sb ai">
+        <nav className="nav flex-box sb">
           <div className="nav__logo">
             <h3 className="logo">Climate Ape</h3>
           </div>

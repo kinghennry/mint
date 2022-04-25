@@ -4,8 +4,6 @@ import { useCountdown } from "../../hooks/useCountDown";
 const CountDownTimer = ({ targetDate }) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
-  console.log(days, hours, minutes, seconds);
-
   const ExpiredNotice = () => {
     return (
       <div className="expired-notice">
@@ -20,21 +18,21 @@ const CountDownTimer = ({ targetDate }) => {
   } else {
     return (
       <>
-        <div style={{ fontSize: "14px", fontWeight: "600" }}>
-          {days}&nbsp;
-          <small style={{ fontWeight: "400" }}>days</small>
+        <div style={{ fontSize: "16px", fontWeight: "600" }}>
+          {days}
+          <small style={{ fontWeight: "400" }}>Days</small>
         </div>
-        <div style={{ fontSize: "14px", fontWeight: "600" }}>
-          {hours}&nbsp;
+        <div style={{ fontSize: "16px", fontWeight: "600" }}>
+          {hours}
           <small style={{ fontWeight: "400" }}>Hours</small>
         </div>
-        <div style={{ fontSize: "14px", fontWeight: "600" }}>
-          {minutes}&nbsp;
+        <div style={{ fontSize: "16px", fontWeight: "600" }}>
+          {minutes}
           <small style={{ fontWeight: "400" }}>Min</small>
         </div>
-        <div style={{ fontSize: "14px", fontWeight: "600" }}>
-          {seconds}&nbsp;
-          <small style={{ fontWeight: "400" }}>Seconds</small>
+        <div style={{ fontSize: "16px", fontWeight: "600" }}>
+          {seconds}
+          <small style={{ fontWeight: "400" }}>Sec</small>
         </div>
       </>
     );
