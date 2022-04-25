@@ -3,10 +3,17 @@ import "./LimitedSale.css";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import { AiOutlineClose } from "react-icons/ai";
+import CountDownTimer from "./CountDownTimer";
 // https://www.figma.com/file/BYFzRa2rmSQNSHvbVoBVGD/Climate-Ape?node-id=172%3A83
 
 function LimitedSale() {
   const [open, setOpen] = useState(false);
+
+  //   timer
+  const FIVE_DAYS_IN_MS = 5 * 24 * 60 * 60 * 1000;
+  const NOW_IN_MS = new Date().getTime();
+
+  const dateTimeAfterFiveDays = NOW_IN_MS + FIVE_DAYS_IN_MS;
 
   const onOpenModal = () => {
     setOpen(!open);
@@ -108,8 +115,9 @@ function LimitedSale() {
               <h4 className="title ct text-bg" style={{ fontSize: "18px" }}>
                 Mint Ends In
               </h4>
-              <div className="mint-timer flex ai se">
-                <div style={{ fontSize: "14px", fontWeight: "600" }}>
+              <div className="mint-timer flex-box se">
+                <CountDownTimer targetDate={dateTimeAfterFiveDays} />
+                {/* <div style={{ fontSize: "14px", fontWeight: "600" }}>
                   10
                   <small style={{ fontWeight: "400" }}>Days</small>
                 </div>
@@ -124,7 +132,7 @@ function LimitedSale() {
                 <div style={{ fontSize: "14px", fontWeight: "600" }}>
                   18
                   <small style={{ fontWeight: "400" }}>Sec</small>
-                </div>
+                </div> */}
               </div>
             </div>
             <span className="desc min-style" style={{ fontSize: "13px" }}>
