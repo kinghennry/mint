@@ -14,6 +14,34 @@
   background: rgba(255, 255, 255, 0.1);
   padding: 20px 30px;
 }
+.moda {
+  /* background: rgba(255, 255, 255, 0.1) !important; */
+  background-color: blue;
+  padding: 15px;
+}
+.modal-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.modal-text {
+  font-family: var(--font-family-Georama) !important;
+  color: #ffffff;
+}
+#modal-head {
+  margin-top: -7px;
+  margin-bottom: 10px;
+}
+#modal-desc {
+  line-height: 20px;
+}
+
+.react-responsive-modal-closeButton {
+  color: #ffffffff !important;
+}
+
 .mint-item h4 {
   margin: 30px 0 15px;
 }
@@ -46,6 +74,8 @@
 }
 .calc {
   background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
   padding: 7px 10px;
 }
 .price-tag span {
@@ -72,11 +102,18 @@
   font-family: var(--font-family-Georama) !important;
 }
 
+.react-responsive-modal-modal {
+  max-width: 500px;
+  background: #201d2e !important;
+}
 .total {
   padding: 14px 0 20px;
 }
 hr {
   border: 1px solid #878787;
+}
+.modal-img {
+  width: 50px;
 }
 .total h4 {
   font-family: var(--font-family-Georama) !important;
@@ -99,9 +136,7 @@ hr {
   margin-top: 20px;
   font-weight: 400;
 }
-.calc {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
+
 @media (max-width: 1023px) {
   .limitedSale-flex,
   .mint-prices {

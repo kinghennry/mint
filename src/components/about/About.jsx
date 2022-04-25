@@ -3,7 +3,7 @@ import "./about.css";
 
 const About = () => {
   return (
-    <section className="about" id='about'>
+    <section className="about" id="about">
       <div className="container">
         <div className="about_flex">
           <div className="about__img">
@@ -49,7 +49,7 @@ const About = () => {
               </span>
             </h1>
 
-            <p>
+            <p style={{ fontWeight: "200" }}>
               The Climate Ape (CAPE) is dedicated to creating awareness about
               Climate Change.
               <br />

@@ -1,9 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 import "./LimitedSale.css";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
+// https://www.figma.com/file/BYFzRa2rmSQNSHvbVoBVGD/Climate-Ape?node-id=172%3A83
+
 function LimitedSale() {
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => {
+    setOpen(!open);
+  };
+  const onCloseModal = () => {
+    setOpen(!open);
+  };
   return (
-    <section className="limited-sale" id='mint'>
+    <section className="limited-sale" id="mint">
       <div className="container">
+        {/* start modal */}
+        <Modal open={open} onClose={onCloseModal} center className="moda">
+          <div style={{ maxWidth: "300px" }}>
+            <h2 className="modal-text" id="modal-head">
+              Connect a wallet
+            </h2>
+            <div className="modal-item">
+              <h5 className="modal-text" id="modal-desc">
+                By Connecting a Wallet,you agree to Uniswap labs{" "}
+                <span>Terms of Service</span> and acknowledge that you have read
+                and understand the Uniswap <span>Protocol Disclaimer</span>.
+              </h5>
+            </div>
+            <div className="modal-flex">
+              <div className="modal-item flex ai sb">
+                <h5 className="modal-text">Metamask</h5>
+                <div className="modal-img">
+                  <img src="Assets/MetaMask.png" alt="metamask" />
+                </div>
+              </div>
+              <div className="modal-item flex ai sb">
+                <h5 className="modal-text">WalletConnect</h5>
+                <div className="modal-img">
+                  <img src="Assets/WalletConnect.png" alt="WalletConnect" />
+                </div>
+              </div>
+              <div className="modal-item flex ai sb">
+                <h5 className="modal-text">Coinbase Wallet</h5>
+                <div className="modal-img">
+                  <img
+                    style={{ width: "35px", marginLeft: "10px" }}
+                    src="Assets/Coinbase.svg"
+                    alt="coinbase"
+                  />
+                </div>
+              </div>
+              <div className="modal-item flex ai sb">
+                <h5 className="modal-text">Fortmatic</h5>
+                <div className="modal-img">
+                  <img
+                    style={{ width: "30px", marginLeft: "10px" }}
+                    src="Assets/Fortmatic.png"
+                    alt="Fortmatic"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Modal>
+        {/* end modal */}
         <div className="limitedSale-flex">
           <div className="mint">
             <h4 className="title text-bg">Mint</h4>
@@ -102,7 +164,9 @@ function LimitedSale() {
               </div>
             </div>
             <hr />
-            <button className="max-btn">Set Max</button>
+            <button className="max-btn" onClick={onOpenModal}>
+              Set Max
+            </button>
           </div>
         </div>
       </div>

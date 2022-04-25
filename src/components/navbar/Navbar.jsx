@@ -27,16 +27,18 @@ const Navbar = () => {
             className={`nav__list flex sa ${toggle ? "nav__list--active" : ""}`}
           >
             {routes.map((route) => {
-              const { id, link,path } = route;
+              const { id, link, path } = route;
               return (
                 <>
                   <li className="nav__item" key={id}>
-                    <Link to={path}
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className="nav__link">
+                    <Link
+                      to={path}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      className="nav__link"
+                    >
                       {link}
                     </Link>
                   </li>
