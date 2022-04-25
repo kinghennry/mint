@@ -26,12 +26,16 @@
   border-radius: 20px;
   margin-bottom: 10px;
 }
-.modal-text {
+.modal-text,
+.modal-icon {
   font-family: var(--font-family-Georama) !important;
   color: #ffffff;
 }
-#modal-head {
-  margin-top: -7px;
+.modal-icon {
+  font-size: 24px;
+  color: #ffffff !important;
+}
+.modal-header {
   margin-bottom: 10px;
 }
 #modal-desc {
@@ -39,7 +43,8 @@
 }
 
 .react-responsive-modal-closeButton {
-  color: #ffffffff !important;
+  background-color: #ffffffff !important;
+  display: none !important;
 }
 
 .mint-item h4 {
@@ -75,7 +80,6 @@
 .calc {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
-
   padding: 7px 10px;
 }
 .price-tag span {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./LimitedSale.css";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
+import { AiOutlineClose } from "react-icons/ai";
 // https://www.figma.com/file/BYFzRa2rmSQNSHvbVoBVGD/Climate-Ape?node-id=172%3A83
 
 function LimitedSale() {
@@ -18,15 +19,19 @@ function LimitedSale() {
       <div className="container">
         {/* start modal */}
         <Modal open={open} onClose={onCloseModal} center className="moda">
-          <div style={{ maxWidth: "300px" }}>
-            <h2 className="modal-text" id="modal-head">
-              Connect a wallet
-            </h2>
+          <div style={{ maxWidth: "400px" }}>
+            <div className="modal-header flex ai sb">
+              <h2 className="modal-text" id="modal-head">
+                Connect a wallet
+              </h2>
+              <AiOutlineClose onClick={onCloseModal} className="modal-icon" />
+            </div>
             <div className="modal-item">
               <h5 className="modal-text" id="modal-desc">
                 By Connecting a Wallet,you agree to Uniswap labs{" "}
-                <span>Terms of Service</span> and acknowledge that you have read
-                and understand the Uniswap <span>Protocol Disclaimer</span>.
+                <span style={{ color: "blue" }}>Terms of Service</span> and
+                acknowledge that you have read and understand the Uniswap{" "}
+                <span style={{ color: "blue" }}>Protocol Disclaimer</span>.
               </h5>
             </div>
             <div className="modal-flex">

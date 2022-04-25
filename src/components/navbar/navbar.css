@@ -44,6 +44,8 @@ header {
 .nav__logo h3 {
   font-family: var(--font-family-main-font);
   color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
 }
 @media (max-width: 1024px) {
   .nav__toggle {
