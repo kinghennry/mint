@@ -28,13 +28,6 @@
 }
 
 body {
-  /* font-family: "Rubik", sans-serif; */
-  /* --GrayishBlue: hsl(229, 8%, 60%); */
-  /* --VeryDarkBlue: hsl(229, 31%, 21%); */
-
-  /* --SoftBlue: hsl(231, 69%, 60%); */
-  /* --SoftRed: hsl(0, 94%, 66%); */
-  /* get the variable colors */
   overflow-x: hidden;
   background: #070417;
 }
@@ -118,4 +111,17 @@ a {
 }
 p {
   font-size: 16px;
+}
+/* reusable styles */
+.mint-txt {
+  font-family: var(--font-family-inter);
+  line-height: 23px;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
 }

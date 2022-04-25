@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container">
         <nav className="nav flex sb ai">
           <div className="nav__logo">
-            <h3>Climate Ape</h3>
+            <h3 className="logo">Climate Ape</h3>
           </div>
           <div
             className="nav__toggle"

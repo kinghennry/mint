@@ -6,15 +6,15 @@ function Accordion({ title, answer }) {
   const [showInfo, setShowInfo] = useState(false);
   return (
     <article
-      className={`accordion_item ${showInfo ? "accordion_item--active" : ""}`}
+      className={`accordion-item ${showInfo ? "accordion-item-active" : ""}`}
     >
-      <div className="question flex sb ai">
+      <div className="question">
         <span className="question__text">{title}</span>
 
         {showInfo ? (
           <>
             <AiOutlineMinus
-              className="acc__white"
+              className="acc-white"
               onClick={() => {
                 setShowInfo(!showInfo);
               }}
@@ -23,7 +23,7 @@ function Accordion({ title, answer }) {
         ) : (
           <>
             <BsPlusCircle
-              className="acc__icon"
+              className="acc-icon"
               onClick={() => {
                 setShowInfo(!showInfo);
               }}

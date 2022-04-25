@@ -31,8 +31,7 @@ const questions = [
   {
     id: 6,
     title: "Do you have a whitelist?",
-    answer:
-      "Other Chrominum Browsers Have not gotton the functionality to use bookmark yet,the opera min,chrome and mozilla extensions are the only capable three for now but in future time there will be other options available.",
+    answer: "No. Not Yet, But Soon.",
   },
 ];
 export default questions;

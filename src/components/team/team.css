@@ -11,8 +11,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-.grid__box article {
-  border: 1px solid #201d2e;
+.grid__box .grid-article {
+  border: 1px solid #7012ce;
   background: #201d2e;
 }
 article h4,
@@ -21,9 +21,9 @@ p {
   color: #ffffff;
 }
 article h4 {
-  font-family: var(--font-family-inter);
   margin: 10px 0 15px;
-  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
 }
 article p {
   margin-bottom: 10px;
@@ -33,9 +33,7 @@ article p {
   background: rgba(255, 255, 255, 0.1);
 }
 /* story css */
-.story-div {
-  /* padding: 0 5px; */
-}
+
 .story {
   background-image: url("../../images/Vector.jpg");
   /* min-height: 120vh; */

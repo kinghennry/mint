@@ -3,7 +3,6 @@
 }
 .about_flex {
   display: flex;
- 
 }
 .about__img {
   flex: 2;
@@ -29,6 +28,7 @@
 .about__text p {
   font-size: 14px;
   line-height: 30px;
+  font-weight: 400;
 }
 .about__image::before {
   content: "";

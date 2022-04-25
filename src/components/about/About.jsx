@@ -7,7 +7,7 @@ const About = () => {
       <div className="container">
         <div className="about_flex">
           <div className="about__img">
-            <div className="flex ai ">
+            <div className="flex-box ">
               <div className="about__image" style={{ background: "#FE99D5" }}>
                 <img src="/Assets/nft-two.png" alt="nft-two" />
               </div>
@@ -18,7 +18,7 @@ const About = () => {
                 <img src="/Assets/nft-three.png" alt="nft-three" />
               </div>
             </div>
-            <div className="flex ai mt">
+            <div className="flex-box mt">
               <div
                 className="about__image"
                 style={{

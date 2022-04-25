@@ -4,20 +4,21 @@ import { BsPercent } from "react-icons/bs";
 
 const Roadmaps = () => {
   return (
-    <section className="limited-sale" id='roadmap'>
+    <section className="limited-sale" id="roadmap">
       <div className="container">
         <div className="roadmap">
           <h4 className="title text-bg">Climate Ape</h4>
           <h1 className="desc" style={{ margin: "12px 0 19px" }}>
             ROADMAP
           </h1>
-          <div className="roadmap-flex flex ai" id="first-border">
+          <div className="roadmap-flex flex-box" id="first-border">
             <div className="roadmap-text roadmap-px">
-              <h3 className="desc flex ai phase-one">
+              <h3 className="desc flex-box phase-one">
                 10
-                <span style={{ paddingTop: "3px" }} className='flex ai'>
+                <span style={{ paddingTop: "3px" }} className="flex-box">
                   <BsPercent />
-                </span> &nbsp; Phase 1: The beginning
+                </span>{" "}
+                &nbsp; Phase 1: The beginning
               </h3>
               <p className="roadmap-desc">
                 To us, the community comes first. The goal is to make our drop
@@ -36,7 +37,7 @@ const Roadmaps = () => {
           {/*  */}
           <div className="roadmap-flex flex ">
             <div className="roadmap-textone roadmap-px" id="second-border">
-              <h3 className="desc flex ai">
+              <h3 className="desc flex-box">
                 20
                 <span style={{ marginTop: "5px" }}>
                   <BsPercent />
@@ -56,7 +57,7 @@ const Roadmaps = () => {
               </p>
             </div>
             <div className="roadmap-text2 roadmap-px">
-              <h3 className="desc flex ai">
+              <h3 className="desc flex-box">
                 40
                 <span style={{ marginTop: "5px" }}>
                   <BsPercent />
@@ -74,7 +75,7 @@ const Roadmaps = () => {
           <div className="roadmap-flex flex ">
             <div className="roadmap-textone roadmap-px"></div>
             <div className="roadmap-text2 roadmap-px" id="third-border">
-              <h3 className="desc flex ai">
+              <h3 className="desc flex-box">
                 50
                 <span style={{ marginTop: "5px" }}>
                   <BsPercent />
@@ -98,7 +99,7 @@ const Roadmaps = () => {
           {/*  */}
           <div className="roadmap-flex flex row-reverse">
             <div className="roadmap-textone roadmap-px" id="fourth-border">
-              <h3 className="desc flex ai">
+              <h3 className="desc flex-box">
                 100
                 <span style={{ marginTop: "5px" }}>
                   <BsPercent />
@@ -113,7 +114,7 @@ const Roadmaps = () => {
               </p>
             </div>
             <div className="roadmap-text2 roadmap-px">
-              <h3 className="desc flex ai">
+              <h3 className="desc flex-box">
                 70{" "}
                 <span style={{ marginTop: "5px" }}>
                   <BsPercent />
@@ -141,9 +142,9 @@ const Roadmaps = () => {
             </div>
           </div>
           {/*  */}
-          <div className="roadmap-flex flex ai">
+          <div className="roadmap-flex flex-box">
             <div className="roadmap-textone roadmap-px" id="fifth-border">
-              <h3 className="desc flex ai">
+              <h3 className="desc flex-box">
                 110
                 <span style={{ marginTop: "5px" }}>
                   <BsPercent />
